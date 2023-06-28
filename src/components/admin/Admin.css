@@ -1,0 +1,16 @@
+.no-data-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.travel-list {
+  display: flex;
+  justify-content: center;
+}
+.admin-panel {
+}
+.admin-panel-text {
+  padding: 25px;
+  background: darkgray;
+}
