@@ -12,9 +12,15 @@ const MainComponent = ({ state, addTravelAction }) => {
   const navigate = useNavigate();
 
   const createMyTrip = () => {
-    const tripArray = [...state.travelList];
-    tripArray.push({ wantToGo, travelers, budget, interested });
-    addTravelAction(tripArray);
+    if (wantToGo && travelers && budget && interested) {
+      const tripArray = [...state.travelList];
+      tripArray.push({ wantToGo, travelers, budget, interested });
+      addTravelAction(tripArray);
+      alert("Added trip data");
+    } else {
+      // Handle the case when the object is empty
+      alert("Invalid trip data");
+    }
   };
   const wantToGoOptions = ["Bostwana", "Egypt", "Kenya", "India", "Malawa"];
   const interestedOptions = [
@@ -90,7 +96,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   addTravelAction: (payload) => {
-    console.log(payload);
     dispatch(addTravelAction(payload));
   },
 });

@@ -24,6 +24,7 @@ p {
   background: #f26a47;
   color: white;
   border: none;
+  cursor: pointer;
 }
 .admin-button {
   width: 200px;
@@ -34,4 +35,5 @@ p {
   position: absolute;
   right: 30px;
   top: 25px;
+  cursor: pointer;
 }

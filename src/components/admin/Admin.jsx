@@ -10,7 +10,7 @@ const Admin = ({ state }) => {
       {travelList.length ? (
         <div className="travel-list">
           {travelList.map((travel, index) => (
-            <Card key={index} data={travel} />
+            <Card key={index} index={index} data={travel} />
           ))}
         </div>
       ) : (
