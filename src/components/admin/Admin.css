@@ -1,0 +1,17 @@
+.no-data-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.travel-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-gap: 20px; */
+}
+.admin-panel {
+}
+.admin-panel-text {
+  padding: 25px;
+  background: darkgray;
+}
